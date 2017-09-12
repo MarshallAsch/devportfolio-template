@@ -50,7 +50,7 @@
         <div id="lead-content">
             <h1>Marshall Asch</h1>
             <h2>Full Stack Developer</h2>
-            <a href="resume/resume_03_16_2017.pdf" download="Marshall Asch resume.pdf" class="btn-rounded-white">Download Resume</a>
+            <a href="resume/resume_09_11_2017.pdf" download="Marshall Asch resume.pdf" class="btn-rounded-white">Download Resume</a>
         </div>
         <!-- End #lead-content -->
 
@@ -73,9 +73,8 @@
                 </div>
                 <div class="col-md-8">
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat. Donec
-                        eu vehicula neque. Donec viverra lorem nunc, tempus euismod eros sollicitudin ut. Quisque et tincidunt libero. Donec id pharetra justo. Proin euismod lacinia dolor, eu scelerisque justo tempus pharetra. Vivamus nunc justo, finibus
-                        ut nisl sed, euismod rhoncus nulla. Proin sed magna egestas, egestas ante et, congue eros. In consequat, mauris dapibus tincidunt suscipit, ex libero aliquet diam, at maximus risus enim non leo.
+                        I am a 3<sup>rd</sup> year computer science student at the <a href="https://www.uoguelph.ca/">University of Guelph</a>, working towards my Bachelor of Computing, Honours.
+
                     </p>
                 </div>
             </div>
@@ -87,7 +86,7 @@
         <h2 class="heading">Experience</h2>
         <div id="experience-timeline">
             <div data-date="April 2017 – Present">
-                <h3>Activintel</h3>
+                <h3><a href="https://www.activintel.com/">Activintel</a></h3>
                 <h4>Android Developer</h4>
                 <p>
                     Working to build our app ArcherSee which is in the pre-alpha stage.
@@ -95,10 +94,10 @@
             </div>
 
             <div data-date="September 2016 - April 2017">
-                <h3>NGTronix</h3>
+                <h3><a href="http://ngtronix.ca/">NGTronix</a></h3>
                 <h4>Web Developer</h4>
                 <p>
-                    Build our Internal tools.
+                    Built our Internal tools.
                 </p>
             </div>
         </div>
@@ -112,17 +111,9 @@
             <span class="education-date">Sept 2015 - Sept 2019</span>
             <h4>Bachelor of Science in Computer Science Honours</h4>
             <p>
-                School stuff.
-
                 <ul>
                     <li>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    </li>
-                    <li>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    </li>
-                    <li>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Member of SOCIS (Society of Computing and Information Science)
                     </li>
                 </ul>
             </p>
@@ -137,31 +128,15 @@
             <div class="row">
                 <div class="project shadow-large">
                     <div class="project-image">
-                        <img src="images/project.jpg" />
+                        <img src="images/download.png" />
                     </div>
                     <!-- End .project-image -->
                     <div class="project-info">
-                        <h3>Project Name Here</h3>
+                        <h3>Solitaire</h3>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
+                            This is a program that I wrote in high school as a single player solitaire game in Java. It features scorring, custimizable card backs, high scores and different user account profiles.
                         </p>
-                        <a href="#">View Project</a>
-                    </div>
-                    <!-- End .project-info -->
-                </div>
-                <!-- End .project -->
-
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/project.jpg" />
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>Project Name Here</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
-                        </p>
-                        <a href="#">View Project</a>
+                        <a href="https://github.com/MarshallAsch/solitaire">View Project</a>
                     </div>
                     <!-- End .project-info -->
                 </div>
@@ -226,6 +201,9 @@
                         </li>
                         <li>
                             <a href="https://www.facebook.com/marshall.asch" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/marshall-asch-58b09112b/" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
                         </li>
                     </ul>
                 </div>
