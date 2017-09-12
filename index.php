@@ -134,7 +134,7 @@
                     <div class="project-info">
                         <h3>Solitaire</h3>
                         <p>
-                            This is a program that I wrote in high school as a single player solitaire game in Java. It features scorring, custimizable card backs, high scores and different user account profiles.
+                            This is a program that I wrote in high school as a single player solitaire game in Java. It features scorring, customizable card backs, high scores and different user account profiles.
                         </p>
                         <a href="https://github.com/MarshallAsch/solitaire">View Project</a>
                     </div>
