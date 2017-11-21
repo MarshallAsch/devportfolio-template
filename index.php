@@ -85,11 +85,19 @@
     <div id="experience" class="background-alt">
         <h2 class="heading">Experience</h2>
         <div id="experience-timeline">
+        	<div data-date="July 2017 – August 2017">
+                <h3><a href="https://www.lakeridgehealth.on.ca">Lakeridge Health</a></h3>
+                <h4>IT Student</h4>
+                <p>
+                	Designed and built internal tools for auditing and incident reporting.  Assisted with the configuration and deployment of an out of band network to monitor the network around the hospital. Performed the migration of Windows SCCM and SQL servers in an enterprise environment.
+
+                </p>
+            </div>
             <div data-date="April 2017 – Present">
                 <h3><a href="https://www.activintel.com/">Activintel</a></h3>
                 <h4>Android Developer</h4>
                 <p>
-                    Working to build our app ArcherSee which is in the pre-alpha stage.
+                    Worked as the lead android developer designing and building an application for the Canadian National Archery team to perform real time data recording and analysis. Developed application layer network protocol to communicate with a server. Cooperated with different departments to design and build different components for the app (i.e. Hardware engineering to design communication protocols).
                 </p>
             </div>
 
@@ -97,7 +105,7 @@
                 <h3><a href="http://ngtronix.ca/">NGTronix</a></h3>
                 <h4>Web Developer</h4>
                 <p>
-                    Built our Internal tools.
+                    Worked with the Human resources and financing team to build a variety of internal tools to help with project time tracking and careers pages.
                 </p>
             </div>
         </div>
@@ -114,6 +122,12 @@
                 <ul>
                     <li>
                         Member of SOCIS (Society of Computing and Information Science)
+                    </li>
+                    <li>
+                        Maintained Dean's Honours List Fall 2015 – Fall 2017 as a result of having a 3.82 GPA
+                    </li>
+                    <li>
+                        Received the University of Guelph Entrance Scholarship for obtaining a minimum average of 85% at a registered Ontario secondary school.
                     </li>
                 </ul>
             </p>
@@ -134,9 +148,47 @@
                     <div class="project-info">
                         <h3>Solitaire</h3>
                         <p>
-                            This is a program that I wrote in high school as a single player solitaire game in Java. It features scorring, customizable card backs, high scores and different user account profiles.
+                           	This is a program that I wrote in high school as a single player solitaire game. It features scoring, customizable card backs, high scores and different user account profiles.
+							It is written by hand in Java and uses XML to store the data.
+
                         </p>
                         <a href="https://github.com/MarshallAsch/solitaire">View Project</a>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
+            </div>
+            <div class="row">
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/webhooks.svg" height="225" width="225" />
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>Continuous Integration Server</h3>
+                        <p>
+                           	A configurable <a href="https://nodejs.org/">Node.js</a> server that will receive GitHub <a href="https://developer.github.com/webhooks/">webhooks</a> to update and restart a running web server without having to do it manually.
+
+                        </p>
+                        <a href="https://github.com/MarshallAsch/cis3750_CI">View Project</a>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
+            </div>
+            <div class="row">
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/project.jpg" height="225" width="225" />
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>Dragon Collar</h3>
+                        <p>
+                        	A wireless Bluetooth dog collar that was developed as the ECHacks 2017 project.
+							It utilizes an <a href="https://store.arduino.cc/genuino-101">Arduino 101</a> board and an Android mobile application.
+                        </p>
+                        <a href="https://github.com/MarshallAsch/echacks2017">View Project</a>
                     </div>
                     <!-- End .project-info -->
                 </div>
@@ -156,9 +208,9 @@
             <li>Python</li>
             <li>Java</li>
             <li>C</li>
-            <li>HTML</li>
-            <li>PHP 5</li>
-            <li>CSS</li>
+            <li>HTML5</li>
+            <li>PHP5</li>
+            <li>CSS3</li>
             <li>Bootstrap</li>
         </ul>
     </div>
@@ -203,7 +255,7 @@
                             <a href="https://www.facebook.com/marshall.asch" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
                         </li>
                         <li>
-                            <a href="https://www.linkedin.com/in/marshall-asch-58b09112b/" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+                            <a href="https://www.linkedin.com/in/MarshallAsch/" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
                         </li>
                     </ul>
                 </div>
@@ -211,6 +263,16 @@
         </div>
     </footer>
     <!-- End footer -->
+
+    <!-- Global Site Tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-105152641-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments)};
+  gtag('js', new Date());
+
+  gtag('config', 'UA-105152641-1');
+</script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/scripts.min.js"></script>
