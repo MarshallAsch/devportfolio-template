@@ -50,7 +50,7 @@
         <div id="lead-content">
             <h1>Marshall Asch</h1>
             <h2>Full Stack Developer</h2>
-            <a href="resume/resume_09_11_2017.pdf" download="Marshall Asch resume.pdf" class="btn-rounded-white">Download Resume</a>
+            <a href="resume/resume_11_27_2017.pdf" download="Marshall Asch resume.pdf" class="btn-rounded-white">Download Resume</a>
         </div>
         <!-- End #lead-content -->
 
@@ -89,7 +89,10 @@
                 <h3><a href="https://www.lakeridgehealth.on.ca">Lakeridge Health</a></h3>
                 <h4>IT Student</h4>
                 <p>
-                	Designed and built internal tools for auditing and incident reporting.  Assisted with the configuration and deployment of an out of band network to monitor the network around the hospital. Performed the migration of Windows SCCM and SQL servers in an enterprise environment.
+                	Designed and built internal web tools for auditing and incident reporting.
+                    Assisted with the configuration and deployment of an out of band network to monitor
+                    the network around the hospital. Performed the migration of Windows SCCM and SQL servers
+                    in an enterprise environment.
 
                 </p>
             </div>
@@ -97,7 +100,11 @@
                 <h3><a href="https://www.activintel.com/">Activintel</a></h3>
                 <h4>Android Developer</h4>
                 <p>
-                    Worked as the lead android developer designing and building an application for the Canadian National Archery team to perform real time data recording and analysis. Developed application layer network protocol to communicate with a server. Cooperated with different departments to design and build different components for the app (i.e. Hardware engineering to design communication protocols).
+                    Worked as the lead android developer designing and building an application for
+                    the Canadian National Archery team to perform real time data recording and analysis.
+                    Developed application layer network protocol to communicate with a server. Cooperated
+                    with different departments to design and build different components for the app
+                    (i.e. hardware engineering to design communication protocols).
                 </p>
             </div>
 
@@ -105,7 +112,8 @@
                 <h3><a href="http://ngtronix.ca/">NGTronix</a></h3>
                 <h4>Web Developer</h4>
                 <p>
-                    Worked with the Human resources and financing team to build a variety of internal tools to help with project time tracking and careers pages.
+                    Worked with the human resources and financing team to build a variety of
+                    internal web tools to help with project time tracking and careers pages.
                 </p>
             </div>
         </div>
@@ -148,8 +156,9 @@
                     <div class="project-info">
                         <h3>Solitaire</h3>
                         <p>
-                           	This is a program that I wrote in high school as a single player solitaire game. It features scoring, customizable card backs, high scores and different user account profiles.
-							It is written by hand in Java and uses XML to store the data.
+                           	This is a program that I wrote in high school as a single player solitaire game.
+                            It features scoring, customizable card backs, high scores and different user account profiles.
+                            It is written by hand in Java and uses XML to store the data.
 
                         </p>
                         <a href="https://github.com/MarshallAsch/solitaire">View Project</a>
@@ -167,10 +176,11 @@
                     <div class="project-info">
                         <h3>Continuous Integration Server</h3>
                         <p>
-                           	A configurable <a href="https://nodejs.org/">Node.js</a> server that will receive GitHub <a href="https://developer.github.com/webhooks/">webhooks</a> to update and restart a running web server without having to do it manually.
-
+                           	A configurable <a href="https://nodejs.org/">Node.js</a> server that will receive GitHub
+                            <a href="https://developer.github.com/webhooks/">webhooks</a> to update and restart a running
+                            web server without having to do it manually.
                         </p>
-                        <a href="https://github.com/MarshallAsch/cis3750_CI">View Project</a>
+                        <a href="https://github.com/MarshallAsch/CI_server">View Project</a>
                     </div>
                     <!-- End .project-info -->
                 </div>
@@ -186,7 +196,7 @@
                         <h3>Dragon Collar</h3>
                         <p>
                         	A wireless Bluetooth dog collar that was developed as the ECHacks 2017 project.
-							It utilizes an <a href="https://store.arduino.cc/genuino-101">Arduino 101</a> board and an Android mobile application.
+                            It utilizes an <a href="https://store.arduino.cc/genuino-101">Arduino 101</a> board and an Android mobile application.
                         </p>
                         <a href="https://github.com/MarshallAsch/echacks2017">View Project</a>
                     </div>
