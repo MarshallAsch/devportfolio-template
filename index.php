@@ -50,7 +50,7 @@
         <div id="lead-content">
             <h1>Marshall Asch</h1>
             <h2>Full Stack Developer</h2>
-            <a href="resume/resume_11_27_2017.pdf" download="Marshall Asch resume.pdf" class="btn-rounded-white">Download Resume</a>
+            <a href="resume/resume_12_18_2017.pdf" download="Marshall Asch resume.pdf" class="btn-rounded-white">Download Resume</a>
         </div>
         <!-- End #lead-content -->
 
@@ -100,7 +100,7 @@
                 <h3><a href="https://www.activintel.com/">Activintel</a></h3>
                 <h4>Android Developer</h4>
                 <p>
-                    Worked as the lead android developer designing and building an application for
+                    Worked as the lead Android developer designing and building an application for
                     the Canadian National Archery team to perform real time data recording and analysis.
                     Developed application layer network protocol to communicate with a server. Cooperated
                     with different departments to design and build different components for the app
