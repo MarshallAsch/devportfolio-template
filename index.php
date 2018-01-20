@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html class="no-js" lang="en">
 
@@ -50,7 +51,7 @@
         <div id="lead-content">
             <h1>Marshall Asch</h1>
             <h2>Full Stack Developer</h2>
-            <a href="resume/resume_12_18_2017.pdf" download="Marshall Asch resume.pdf" class="btn-rounded-white">Download Resume</a>
+            <a href="resume" download="Marshall Asch resume.pdf" class="btn-rounded-white">Download Resume</a>
         </div>
         <!-- End #lead-content -->
 
@@ -176,9 +177,9 @@
                     <div class="project-info">
                         <h3>Continuous Integration Server</h3>
                         <p>
-                           	A configurable <a href="https://nodejs.org/">Node.js</a> server that will receive GitHub
-                            <a href="https://developer.github.com/webhooks/">webhooks</a> to update and restart a running
-                            web server without having to do it manually.
+                           	A configurable <a href="https://nodejs.org/">Node.js</a> server that will receive GitHub or Gitlab
+                            <a href="https://developer.github.com/webhooks/">webhooks</a> to automatically update and restart a
+                            running web server without having to do it manually.
                         </p>
                         <a href="https://github.com/MarshallAsch/CI_server">View Project</a>
                     </div>
@@ -199,6 +200,24 @@
                             It utilizes an <a href="https://store.arduino.cc/genuino-101">Arduino 101</a> board and an Android mobile application.
                         </p>
                         <a href="https://github.com/MarshallAsch/echacks2017">View Project</a>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
+            </div>
+            <div class="row">
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/project.jpg" height="225" width="225" />
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>CIS3750 Community Engaged Scholarship</h3>
+                        <p>
+                        	A web API that was build for a software design course with to address a social
+                        	challenge in our community. It is a Node.js backend with a MySQL database.
+                        </p>
+                        <a href="https://cis3750.marshallasch.ca">View Project</a>
                     </div>
                     <!-- End .project-info -->
                 </div>
