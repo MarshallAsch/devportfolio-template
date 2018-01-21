@@ -98,7 +98,7 @@
                 </p>
             </div>
             <div data-date="April 2017 – Present">
-                <h3><a href="https://www.activintel.com/">Activintel</a></h3>
+                <h3><a href="https://www.activntel.com/">ActivNtel</a></h3>
                 <h4>Android Developer</h4>
                 <p>
                     Worked as the lead Android developer designing and building an application for

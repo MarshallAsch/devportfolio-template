@@ -1,1 +1,1 @@
-<?php header("Location: resume_12_18_2017.pdf"); ?>
+<?php header("Location: resume_01_20_2018.pdf"); ?>
