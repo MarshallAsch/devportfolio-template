@@ -74,7 +74,7 @@
                 </div>
                 <div class="col-md-8">
                     <p>
-                        I am a 3<sup>rd</sup> year computer science student at the <a href="https://www.uoguelph.ca/">University of Guelph</a>, working towards my Bachelor of Computing, Honours.
+                        I am a 4<sup>th</sup> year computer science student at the <a href="https://www.uoguelph.ca/">University of Guelph</a>, working towards my Bachelor of Computing, Honours.
 
                     </p>
                 </div>
@@ -86,6 +86,15 @@
     <div id="experience" class="background-alt">
         <h2 class="heading">Experience</h2>
         <div id="experience-timeline">
+            <div data-date="May 2018 – August 2018">
+                <h3><a href="https://left.io">Left of the Dot Media</a></h3>
+                <h4>Android Developer</h4>
+                <p>
+                    Worked on a mobile application for Android using the <a href="https://rightmesh.io">RightMesh</a>
+                    Mesh networking platform. Worked on a small team and provided weekly updates to the project manager.
+
+                </p>
+            </div>
         	<div data-date="July 2017 – August 2017">
                 <h3><a href="https://www.lakeridgehealth.on.ca">Lakeridge Health</a></h3>
                 <h4>IT Student</h4>
@@ -133,7 +142,10 @@
                         Member of SOCIS (Society of Computing and Information Science)
                     </li>
                     <li>
-                        Maintained Dean's Honours List Fall 2015 – Fall 2017 as a result of having a 3.82 GPA
+                        Executive of SOCIS for the Fall 2018 and Winter 2019 Semesters
+                    </li>
+                    <li>
+                        Maintained Dean's Honours List Fall 2015 – Winter 2018 as a result of having a 3.82 GPA
                     </li>
                     <li>
                         Received the University of Guelph Entrance Scholarship for obtaining a minimum average of 85% at a registered Ontario secondary school.
@@ -151,7 +163,50 @@
             <div class="row">
                 <div class="project shadow-large">
                     <div class="project-image">
-                        <img src="images/download.png" />
+                        <img src="images/project.jpg"  height="225" width="225"/>
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>Veil</h3>
+                        <p>
+                            This is the mesh networking app that I built with <a href="https://github.com/weihanli101">Weihan Li</a>
+                            while working for <a href="https://left.io">Left</a>. The app is a basic forum platform where users are able
+                            to create posts (with a title, message and tags) that other users are able to then see and reply to. The basis
+                            for the app is to create a platform that is somewhat similar to <a href="https://stackoverflow.com/">Stack Overflow</a>
+                            that does not rely on an internet connection or centralized data storage.
+
+                        </p>
+                        <a href="https://github.com/MarshallAsch/veil-droid">View Project</a>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
+            </div>
+            <div class="row">
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/project.jpg"  height="225" width="225"/>
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>MyIR</h3>
+                        <p>
+                            This is an app that was built for Interventional Radiologists as a helpful resource
+                            for different types of medical conditions. The app was created in partnership with Dr. Justin Shafa
+                            for both Android and Apple.
+
+                        </p>
+                        <a href="https://github.com/MarshallAsch/myIR_ios">View Project (iOS)</a> <br>
+                        <a href="https://github.com/MarshallAsch/myIR_android">View Project (Android)</a>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
+            </div>
+            <div class="row">
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/cards.png"  height="225" width="225"/>
                     </div>
                     <!-- End .project-image -->
                     <div class="project-info">
@@ -178,8 +233,8 @@
                         <h3>Continuous Integration Server</h3>
                         <p>
                            	A configurable <a href="https://nodejs.org/">Node.js</a> server that will receive GitHub or Gitlab
-                            <a href="https://developer.github.com/webhooks/">webhooks</a> to automatically update and restart a
-                            running web server without having to do it manually.
+                            <a href="https://developer.github.com/webhooks/">webhooks</a> to automatically run a script for a specific
+                            repository and branch.
                         </p>
                         <a href="https://github.com/MarshallAsch/CI_server">View Project</a>
                     </div>
