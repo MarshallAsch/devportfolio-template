@@ -163,7 +163,7 @@
             <div class="row">
                 <div class="project shadow-large">
                     <div class="project-image">
-                        <img src="images/project.jpg"  height="225" width="225"/>
+                        <img src="images/veil.png"  height="225" width="225"/>
                     </div>
                     <!-- End .project-image -->
                     <div class="project-info">
@@ -185,7 +185,7 @@
             <div class="row">
                 <div class="project shadow-large">
                     <div class="project-image">
-                        <img src="images/project.jpg"  height="225" width="225"/>
+                        <img src="images/myIR.png"  height="225" width="225"/>
                     </div>
                     <!-- End .project-image -->
                     <div class="project-info">
