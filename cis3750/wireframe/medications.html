@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>CLC Participant Dashboard</title>
+
+        <!-- Bootstrap CSS-->
+        <link rel="stylesheet" href="../css/bootstrap4.min.css">
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="../css/dashboard.css">
+        <link rel="stylesheet" href="../css/fonts.css">
+        <link rel="stylesheet" href="../css/font-awesome.min.css">
+        <link rel="icon" href=../AppLogo2.png>
+
+<link rel="stylesheet" href="../css/bootstrap-datetimepicker.min.css">
+        <style type="text/css">
+            .required {
+      color: red;
+    }
+        .weekDays-selector input {
+          display: none!important;
+        }
+
+        .weekDays-selector input[type=checkbox] + label {
+          display: inline-block;
+          border-radius: 6px;
+          background: #dddddd;
+          height: 40px;
+          width: 30px;
+          margin-right: 3px;
+          line-height: 40px;
+          text-align: center;
+          cursor: pointer;
+        }
+
+        .weekDays-selector input[type=checkbox]:checked + label {
+          background: #2AD705;
+          color: #ffffff;
+        }
+        </style>
+    </head>
+    <body>
+        <div class="wrapper">
+            <!-- Sidebar Holder -->
+            <nav id="sidebar">
+                <div class="sidebar-header">
+                    <a href="./dashboard.html"><img src="../images/CL_Logo.png" width="200px"></a>
+                </div>
+
+                <ul class="list-unstyled components">
+                    <li>
+                        <p align="center"><img src="../images/jjj.jpg" class="profile">&nbsp;&nbsp;&nbsp;<b>Dylan Smith</b></p>
+                        <a href="index.html"><span class="glyphicon glyphicon-log-out"></span>&nbsp;&nbsp;Logout</a>
+                    </li>
+                </ul>
+
+                <ul class="list-unstyled components">
+                        <li>
+                            <a href="./dashboard.html"><span class="fa fa-tachometer"></span>&nbsp;&nbsp;Dashboard</a>
+                        </li>
+                        <li>
+                            <a href="./schedules.html"><span class="fa fa-calendar"></span>&nbsp;&nbsp;Schedules</a>
+                        </li>
+                        <li class="active">
+                            <a href="#"><span class="fa fa-medkit"></span>&nbsp;&nbsp;Medications</a>
+                        </li>
+                        <li>
+                            <a href="./messenger.html"><span class="glyphicon glyphicon-comment"></span>&nbsp;&nbsp;Messenger</a>
+                        </li>
+                        <li>
+                            <a href="./settings.html"><span class="glyphicon glyphicon-cog"></span>&nbsp;&nbsp;Account Settings</a>
+                        </li>
+                        <li>
+                            <a href="./support.html"><span class="fa fa-question-circle-o"></span>&nbsp;&nbsp;Support</a>
+                        </li>
+                        <li>
+                            <a href="./friends.html"><span class="fa fa-users"></span>&nbsp;&nbsp;Friends</a>
+                        </li>
+                    </ul>
+            </nav>
+
+            <!-- Page Content Holder -->
+            <div id="content">
+                <nav class="navbar navbar-default">
+                    <div class="container-fluid">
+
+                        <div class="navbar-header">
+                            <button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn">
+                                <i class="glyphicon glyphicon-menu-hamburger"></i>
+                            </button>
+                        </div>
+                    </div>
+                </nav>
+
+<!-- Add stuff after this line -->
+        <div class="container">
+                <h2>Medications</h2>
+                <p class="lead">
+                    This is the list of medications you are currently taking.
+                </p>
+
+                <div class="agenda text-center">
+                    <div class="table-responsive">
+                        <table class="table table-condensed table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>Frequency</th>
+                                    <th>Time</th>
+                                    <th>Medication</th>
+                                    <th>Options</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="align-middle" rowspan="1">
+                                        Med A
+                                    </td>
+                                    <td class=" align-middle">
+                                        Monday <br>
+                                        Wednesday <br>
+                                        Friday
+                                    </td>
+                                    <td class="align-middle">
+                                        12:20 PM
+                                    </td>
+                                    <td>
+                                        <button  data-toggle="modal" data-target="#edit1Modal" class="btn btn-link"><i class="fa fa-pencil-square-o"></i>&nbsp;Edit</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="align-middle" class="active" rowspan="1">
+                                        Tylenol
+                                    </td>
+                                    <td class="align-middle">
+                                        Everyday
+
+                                    </td>
+                                    <td class="align-middle">
+                                        3:00 PM
+                                    </td>
+                                    <td class="align-middle">
+                                        <button  data-toggle="modal" data-target="#edit2Modal" class="btn btn-link"><i class="fa fa-pencil-square-o"></i>&nbsp;Edit</button>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td class="align-middle" rowspan="1">
+                                        Advil
+                                    </td>
+                                    <td class="align-middle">
+                                        Weekdays
+
+                                    </td>
+                                    <td class="align-middle">
+                                        6:00 PM
+                                    </td>
+                                    <td class="align-middle">
+                                        <button  data-toggle="modal" data-target="#edit3Modal" class="btn btn-link"><i class="fa fa-pencil-square-o"></i>&nbsp;Edit</button>
+                                    </td>
+                                </tr>
+
+
+                                <tr>
+                                    <td colspan="4">
+                                        <button  data-toggle="modal" data-target="#newMedModal" class="btn btn-link">
+                                        <i class="fa fa-plus"></i>
+                                        Add Medication
+                                        </button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+        </div>
+
+<!-- Add stuff before this line -->
+
+
+<!-- Modal new -->
+<div class="modal " id="newMedModal" name="newMedModal" tabindex="-1" role="dialog" aria-labelledby="newMedModalLabel" aria-hidden="true">
+  <div class="modal-dialog  modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="newMedModalLabel"><strong>New Medication Schedule</strong></h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+
+
+          <form class="form-horizontal" role="form">
+              <div class="form-group ">
+                  <label for="medName" class="col-sm-3 control-label"><strong>Medication Name</strong></label>
+                  <div class="col-sm-9">
+                      <input type="text"  id="medName" placeholder="Tylenol" class="form-control" autofocus>
+                  </div>
+              </div>
+
+
+              <hr>
+
+
+        <label class="control-label"><strong>What days do you take the medication?</strong></label>
+
+              <div class="weekDays-selector">
+                  <input type="checkbox" id="weekday-mone" class="weekdaye" />
+                  <label for="weekday-mone">M</label>
+                  <input type="checkbox" id="weekday-tuee" class="weekdaye" />
+                  <label for="weekday-tuee">T</label>
+                  <input type="checkbox" id="weekday-wede" class="weekdaye" />
+                  <label for="weekday-wede">W</label>
+                  <input type="checkbox" id="weekday-thue" class="weekdaye" />
+                  <label for="weekday-thue">T</label>
+                  <input type="checkbox" id="weekday-frie" class="weekdaye" />
+                  <label for="weekday-frie">F</label>
+                  <input type="checkbox" id="weekday-sate" class="weekdaye" />
+                  <label for="weekday-sate">S</label>
+                  <input type="checkbox" id="weekday-sune" class="weekdaye" />
+                  <label for="weekday-sune">S</label>
+            </div>
+
+      <hr>
+
+
+
+
+            <div class="form-group">
+                 <label for="time" class="col-sm-3 control-label"><strong>Time</strong></label>
+                  <div class="input-group col-sm-4">
+
+                     <input type="time" id="time" class="form-control">
+                      <div class="input-group-addon"><i class="fa fa-plus"></i></div>
+
+                  </div>
+              </div>
+
+
+
+
+              <hr>
+              <div class="form-group ">
+                  <label class="control-label col-sm-3"><strong>Dose window</strong></label>
+                  <div class="col-sm-6">
+                      <div class="row">
+
+                              <label class="radio-inline">
+                                  <select class="form-control" name="doseWindow">
+                                      <option value="1">&plusmn;15 minutes</option>
+                                    <option value="2">&plusmn;30 minutes</option>
+                                    <option value="3">&plusmn;1 Hour</option>
+                                    <option value="4">&plusmn;2 Hours</option>
+                                    <option value="5">&plusmn;3 Hours</option>
+                                    <option value="6">&plusmn;4 Hours</option>
+
+                                  </select> 
+                              </label>
+                      </div>
+                  </div>
+              </div> <!-- /.form-group -->
+
+
+          </form> <!-- /form -->
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Save</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- end new med modal-->
+
+
+
+
+
+<!-- Modal edit 1 -->
+<div class="modal " id="edit1Modal" name="edit1Modal" tabindex="-1" role="dialog" aria-labelledby="edit1ModalLabel" aria-hidden="true">
+  <div class="modal-dialog  modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="edit1ModalLabel"><strong>Edit Med A</strong></h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+
+
+          <form class="form-horizontal" role="form">
+              <div class="form-group ">
+                  <label for="medName" class="col-sm-3 control-label"><strong>Medication Name</strong></label>
+                  <div class="col-sm-9">
+                      <input type="text"  id="medName" placeholder="Tylenol" class="form-control"  value="Med A" autofocus>
+                  </div>
+              </div>
+
+
+              <hr>
+
+
+        <label class="control-label"><strong>What days do you take the medication?</strong></label>
+
+              <div class="weekDays-selector">
+                  <input type="checkbox" id="weekday-mon" class="weekday" checked/>
+                  <label for="weekday-mon">M</label>
+                  <input type="checkbox" id="weekday-tue" class="weekday" />
+                  <label for="weekday-tue">T</label>
+                  <input type="checkbox" id="weekday-wed" class="weekday" checked/>
+                  <label for="weekday-wed">W</label>
+                  <input type="checkbox" id="weekday-thu" class="weekday" />
+                  <label for="weekday-thu">T</label>
+                  <input type="checkbox" id="weekday-fri" class="weekday"checked />
+                  <label for="weekday-fri">F</label>
+                  <input type="checkbox" id="weekday-sat" class="weekday" />
+                  <label for="weekday-sat">S</label>
+                  <input type="checkbox" id="weekday-sun" class="weekday" />
+                  <label for="weekday-sun">S</label>
+            </div>
+
+      <hr>
+
+
+
+
+            <div class="form-group">
+                 <label for="time" class="col-sm-3 control-label"><strong>Time</strong></label>
+                  <div class="input-group col-sm-4">
+
+                     <input type="time" id="time" class="form-control" value="12:20">
+                      <div class="input-group-addon"><i class="fa fa-plus"></i></div>
+
+                  </div>
+              </div>
+
+
+
+
+              <hr>
+              <div class="form-group ">
+                  <label class="control-label col-sm-3"><strong>Dose window</strong></label>
+                  <div class="col-sm-6">
+                      <div class="row">
+
+                              <label class="radio-inline">
+                                  <select class="form-control" name="doseWindow">
+                                      <option value="1">&plusmn;15 minutes</option>
+                                    <option value="2">&plusmn;30 minutes</option>
+                                    <option value="3">&plusmn;1 Hour</option>
+                                    <option value="4">&plusmn;2 Hours</option>
+                                    <option value="5">&plusmn;3 Hours</option>
+                                    <option value="6">&plusmn;4 Hours</option>
+
+                                  </select> 
+                              </label>
+                      </div>
+                  </div>
+              </div> <!-- /.form-group -->
+
+
+          </form> <!-- /form -->
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Save</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- end  edit 1 modal-->
+
+
+<!-- Modal edit 2 -->
+<div class="modal " id="edit2Modal" name="edit2Modal" tabindex="-1" role="dialog" aria-labelledby="edit2ModalLabel" aria-hidden="true">
+  <div class="modal-dialog  modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="edit2ModalLabel"><strong>Edit Tylenol</strong></h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+
+
+          <form class="form-horizontal" role="form">
+              <div class="form-group ">
+                  <label for="medName" class="col-sm-3 control-label"><strong>Medication Name</strong></label>
+                  <div class="col-sm-9">
+                      <input type="text"  id="medName" placeholder="Tylenol" class="form-control"  value="Tylenol" autofocus>
+                  </div>
+              </div>
+
+
+              <hr>
+
+
+        <label class="control-label"><strong>What days do you take the medication?</strong></label>
+
+              <div class="weekDays-selector">
+                  <input type="checkbox" id="weekday-mon2" class="weekday2" checked/>
+                  <label for="weekday-mon2">M</label>
+                  <input type="checkbox" id="weekday-tue2" class="weekday2" checked/>
+                  <label for="weekday-tue2">T</label>
+                  <input type="checkbox" id="weekday-wed2" class="weekday2" checked/>
+                  <label for="weekday-wed2">W</label>
+                  <input type="checkbox" id="weekday-thu2" class="weekday2" checked/>
+                  <label for="weekday-thu2">T</label>
+                  <input type="checkbox" id="weekday-fri2" class="weekday2"checked />
+                  <label for="weekday-fri2">F</label>
+                  <input type="checkbox" id="weekday-sat2" class="weekday2" checked/>
+                  <label for="weekday-sat2">S</label>
+                  <input type="checkbox" id="weekday-sun2" class="weekday2" checked/>
+                  <label for="weekday-sun2">S</label>
+            </div>
+
+      <hr>
+
+
+
+
+            <div class="form-group">
+                 <label for="time" class="col-sm-3 control-label"><strong>Time</strong></label>
+                  <div class="input-group col-sm-4">
+
+                     <input type="time" id="time" class="form-control" value="15:00">
+                      <div class="input-group-addon"><i class="fa fa-plus"></i></div>
+
+                  </div>
+              </div>
+
+
+
+
+              <hr>
+              <div class="form-group ">
+                  <label class="control-label col-sm-3"><strong>Dose window</strong></label>
+                  <div class="col-sm-6">
+                      <div class="row">
+
+                              <label class="radio-inline">
+                                  <select class="form-control" name="doseWindow">
+                                      <option value="1">&plusmn;15 minutes</option>
+                                    <option value="2">&plusmn;30 minutes</option>
+                                    <option value="3">&plusmn;1 Hour</option>
+                                    <option value="4">&plusmn;2 Hours</option>
+                                    <option value="5">&plusmn;3 Hours</option>
+                                    <option value="6">&plusmn;4 Hours</option>
+
+                                  </select> 
+                              </label>
+                      </div>
+                  </div>
+              </div> <!-- /.form-group -->
+
+
+          </form> <!-- /form -->
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Save</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- end  edit 2 modal-->
+
+
+<!-- Modal edit 3 -->
+<div class="modal " id="edit3Modal" name="edit3Modal" tabindex="-1" role="dialog" aria-labelledby="edit3ModalLabel" aria-hidden="true">
+  <div class="modal-dialog  modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="edit3ModalLabel"><strong>Edit Advil</strong></h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+
+
+          <form class="form-horizontal" role="form">
+              <div class="form-group ">
+                  <label for="medName" class="col-sm-3 control-label"><strong>Medication Name</strong></label>
+                  <div class="col-sm-9">
+                      <input type="text"  id="medName" placeholder="Tylenol" class="form-control"  value="Advil" autofocus>
+                  </div>
+              </div>
+
+
+              <hr>
+
+
+        <label class="control-label"><strong>What days do you take the medication?</strong></label>
+
+              <div class="weekDays-selector">
+                  <input type="checkbox" id="weekday-mon3" class="weekday3" checked/>
+                  <label for="weekday-mon3">M</label>
+                  <input type="checkbox" id="weekday-tue3" class="weekday3" checked/>
+                  <label for="weekday-tue3">T</label>
+                  <input type="checkbox" id="weekday-wed3" class="weekday3" checked/>
+                  <label for="weekday-wed3">W</label>
+                  <input type="checkbox" id="weekday-thu3" class="weekday3" checked/>
+                  <label for="weekday-thu3">T</label>
+                  <input type="checkbox" id="weekday-fri3" class="weekday3"checked />
+                  <label for="weekday-fri3">F</label>
+                  <input type="checkbox" id="weekday-sat3" class="weekday3" />
+                  <label for="weekday-sat3">S</label>
+                  <input type="checkbox" id="weekday-sun3" class="weekday3" />
+                  <label for="weekday-sun3">S</label>
+            </div>
+
+      <hr>
+
+
+
+
+            <div class="form-group">
+                 <label for="time" class="col-sm-3 control-label"><strong>Time</strong></label>
+                  <div class="input-group col-sm-4">
+
+                     <input type="time" id="time" class="form-control" value="18:00">
+                      <div class="input-group-addon"><i class="fa fa-plus"></i></div>
+
+                  </div>
+              </div>
+
+
+
+
+              <hr>
+              <div class="form-group ">
+                  <label class="control-label col-sm-3"><strong>Dose window</strong></label>
+                  <div class="col-sm-6">
+                      <div class="row">
+
+                              <label class="radio-inline">
+                                  <select class="form-control" name="doseWindow">
+                                      <option value="1">&plusmn;15 minutes</option>
+                                    <option value="2">&plusmn;30 minutes</option>
+                                    <option value="3">&plusmn;1 Hour</option>
+                                    <option value="4">&plusmn;2 Hours</option>
+                                    <option value="5">&plusmn;3 Hours</option>
+                                    <option value="6">&plusmn;4 Hours</option>
+
+                                  </select> 
+                              </label>
+                      </div>
+                  </div>
+              </div> <!-- /.form-group -->
+
+
+          </form> <!-- /form -->
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Save</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- end  edit 3 modal-->
+
+
+
+
+
+
+
+<!-- end stuff-->
+
+
+        </div>
+
+
+
+
+    <!-- <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+     <script src="../js/moment.js">
+
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+
+     <script src="../js/bootstrap-datetimepicker.min.js">
+-->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
+<script src="https://netdna.bootstrapcdn.com/twitter-bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
+<script src="../js/bootstrap-datetimepicker.min.js">
+
+
+
+
+         <script type="text/javascript">
+             $(document).ready(function () {
+                 $('#sidebarCollapse').on('click', function () {
+                     $('#sidebar').toggleClass('active');
+                 });
+             });
+         </script>
+    </body>
+</html>

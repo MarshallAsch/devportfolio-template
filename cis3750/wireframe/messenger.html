@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>CLC Participant Dashboard</title>
+
+        <!-- Bootstrap CSS-->
+        <link rel="stylesheet" href="../css/bootstrap4.min.css">
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="../css/dashboard.css">
+        <link rel="stylesheet" href="../css/fonts.css">
+        <link rel="stylesheet" href="../css/font-awesome.min.css">
+        <link rel=icon href=../AppLogo2.png>
+    </head>
+    <body>
+        <div class="wrapper">
+            <!-- Sidebar Holder -->
+            <nav id="sidebar">
+                <div class="sidebar-header">
+                    <a href="./dashboard.html"><img src="../images/CL_Logo.png" width="200px"></a>
+                </div>
+
+                <ul class="list-unstyled components">
+                    <li>
+                        <p align="center"><img src="../images/jjj.jpg" class="profile">&nbsp;&nbsp;&nbsp;<b>Dylan Smith</b></p>
+                        <a href="index.html"><span class="glyphicon glyphicon-log-out"></span>&nbsp;&nbsp;Logout</a>
+                    </li>
+                </ul>
+
+                <ul class="list-unstyled components">
+                    <li>
+                        <a href="./dashboard.html"><span class="fa fa-tachometer"></span>&nbsp;&nbsp;Dashboard</a>
+                    </li>
+                    <li>
+                        <a href="./schedules.html"><span class="fa fa-calendar"></span>&nbsp;&nbsp;Schedules</a>
+                    </li>
+                    <li>
+                        <a href="./medications.html"><span class="fa fa-medkit"></span>&nbsp;&nbsp;Medications</a>
+                    </li>
+                    <li class="active">
+                        <a href="./messenger.html"><span class="glyphicon glyphicon-comment"></span>&nbsp;&nbsp;Messenger</a>
+                    </li>
+                    <li>
+                        <a href="./settings.html"><span class="glyphicon glyphicon-cog"></span>&nbsp;&nbsp;Account Settings</a>
+                    </li>
+                    <li>
+                        <a href="./support.html"><span class="fa fa-question-circle-o"></span>&nbsp;&nbsp;Support</a>
+                    </li>
+                    <li>
+                        <a href="./friends.html"><span class="fa fa-users"></span>&nbsp;&nbsp;Friends</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- Page Content Holder -->
+            <div id="content">
+                <nav class="navbar navbar-default">
+                    <div class="container-fluid">
+
+                        <div class="navbar-header">
+                            <button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn">
+                                <i class="glyphicon glyphicon-menu-hamburger"></i>
+                            </button>
+                        </div>
+                    </div>
+                </nav>
+
+<!-- Add stuff after this line -->
+<div class="container">
+    <h2>Messenger</h2>
+    <br>
+    <div class="card-deck">
+        <div class="card text-center" style="width: 20rem;">
+            <img class="card-img-top" src="../images/scrooge.jpg" alt="Scrooge McDuck">
+            <div class="card-block" style="padding:5px;">
+                <h4 class="card-title">Scrooge McDuck</h4>
+                <h6 class="card-subtitle mb-2 text-muted">Multi-trillionaire</h6>
+                <p class="card-text"></p>
+            </div>
+            <div class="card-block">
+                    <a href="./messenger.html" class="btn btn-link">Message</a>
+                    <a href="./friends.html" class="btn btn-link">Edit Friend</a>
+            </div>
+            <div class="card-footer">
+                <small class="text-muted">Last online: 10 minutes</small>
+            </div>
+        </div>
+
+        <div class="card text-center" style="width: 20rem;">
+            <img class="card-img-top" src="../images/tcook.jpg" alt="Tim Cook">
+            <div class="card-block" style="padding:5px;">
+                <h4 class="card-title">Tim Cook</h4>
+                <h6 class="card-subtitle mb-2 text-muted">CEO of Apple Inc.</h6>
+                <p class="card-text"></p>
+            </div>
+            <div class="card-block">
+                <a href="./messenger.html" class="btn btn-link">Message</a>
+                <a href="./friends.html" class="btn btn-link">Edit Friend</a>
+            </div>
+            <div class="card-footer">
+                <small class="text-muted">Last online: 7 hours</small>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Add stuff before this line -->
+        </div>
+
+
+        <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+
+         <script type="text/javascript">
+             $(document).ready(function () {
+                 $('#sidebarCollapse').on('click', function () {
+                     $('#sidebar').toggleClass('active');
+                 });
+             });
+         </script>
+    </body>
+</html>

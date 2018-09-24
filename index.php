@@ -76,6 +76,12 @@
                     <p>
                         I am a 4<sup>th</sup> year computer science student at the <a href="https://www.uoguelph.ca/">University of Guelph</a>, working towards my Bachelor of Computing, Honours.
 
+                        <br> <br>
+                        I am currently working on a CIS*4900 (a computer science project course) with <a href="http://danielgillis.ca/">Dr. Dan Gillis</a> on a project to help close the digital divide in northern Canada and to help monitor the environment and health of individuals in an Inuit community in Rigolet, Labrador.
+
+                        <br> <br>
+                        Like my work? Making a <a href="https://www.paypal.me/marshallasch/5">small donation</a> helps me pay for server space to host this website, the domain name, and sometimes a nice cup of hot chocolate.
+
                     </p>
                 </div>
             </div>
@@ -106,7 +112,7 @@
 
                 </p>
             </div>
-            <div data-date="April 2017 – Present">
+            <div data-date="April 2017 – June 2018">
                 <h3><a href="https://www.activntel.com/">ActivNtel</a></h3>
                 <h4>Android Developer</h4>
                 <p>
@@ -139,10 +145,10 @@
             <p>
                 <ul>
                     <li>
-                        Member of SOCIS (Society of Computing and Information Science)
+                        Member of <a href="https://socis.ca">SOCIS (Society of Computing and Information Science)</a>
                     </li>
                     <li>
-                        Executive of SOCIS for the Fall 2018 and Winter 2019 Semesters
+                        System Administrator SOCIS for the Fall 2018 and Winter 2019 Semesters
                     </li>
                     <li>
                         Maintained Dean's Honours List Fall 2015 – Winter 2018 as a result of having a 3.82 GPA
@@ -272,7 +278,7 @@
                         	A web API that was build for a software design course with to address a social
                         	challenge in our community. It is a Node.js backend with a MySQL database.
                         </p>
-                        <a href="https://cis3750.marshallasch.ca">View Project</a>
+                        <a href="/CIS3750">View Project</a>
                     </div>
                     <!-- End .project-info -->
                 </div>
@@ -329,6 +335,9 @@
                 </div>
                 <div class="col-sm-5 social">
                     <ul>
+                        <li>
+                            <a href="https://gitlab.com/MarshallAsch" target="_blank"><i class="fa fa-gitlab" aria-hidden="true"></i></a>
+                        </li>
                         <li>
                             <a href="https://github.com/MarshallAsch" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
                         </li>
